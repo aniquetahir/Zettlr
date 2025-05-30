@@ -103,7 +103,7 @@ Vim.defineEx('wq', 'wq', (cm: CodeMirror, params: ExParams) => {
 Vim.map('j', 'gj') // Account for line wraps when moving down
 // @ts-expect-error The types are not properly updated
 Vim.map('k', 'gk') // Account for line wraps when moving up
-Vim.map('jk', '<Esc>') // remap Esc
+Vim.map('jk', '<Esc>', 'insert') // remap Esc
 
 // Unmap bindings to restore default editor behavior
 // @ts-expect-error The types are not properly updated
